@@ -1,0 +1,10 @@
+<p>Hello, Curb. Select your option:<p> 
+                        <form name='roshambo' method='post' action="round/">
+                        {% csrf_token %}
+                        Selection: <select name='option'>
+                             <option value='rock' >Rock</option>
+                             <option value='paper' >Paper</option>
+                             <option value='scissors' >Scissors</option>
+                             </select>
+                        <input type='submit' name='submit'/>
+                        </form>
